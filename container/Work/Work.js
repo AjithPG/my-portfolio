@@ -90,7 +90,7 @@ const Work = () => {
               </p>
               <div className="flex justify-center">
               <button className="bg-secondary text-white px-3 py-1 rounded">
-                <a href={work.projectLink}>View</a>
+                <a href={work.projectLink} target="_blank">View</a>
               </button>
               </div>
             
