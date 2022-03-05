@@ -7,7 +7,8 @@ const Navbar = () => {
     return (
         <nav className='app__navbar flex items-center justify-between w-100 px-4 py-6  bg-white shadow-sm'>
             <div className='app__navbar-logo flex items-center justify-center'>
-                <Image src={images.logo} alt="Logo" width={90} height={20} />
+                {/* <Image src={images.logo} alt="Logo" width={90} height={20} /> */}
+               <p className="inline-flex text-2xl font-bold">AJITH PG</p> 
             </div>
             {/* <ul className='app__navbar-links  flex-1 items-center justify-center hidden lg:flex'>
                 {
@@ -31,7 +32,7 @@ const Navbar = () => {
 
                                 {
                                     ['Contact'].map((item) => (
-                                        <li key={item} className='mr-4 cursor-pointer flex-col m-3'>
+                                        <li key={item} className='mr-4 cursor-pointer flex-col m-3' onClick={() => setToggle(false)}>
 
                                             <a href={`#${item}`} className='text-grey font-medium hover:text-secondary text-sm uppercase'>{item}</a>
                                         </li>

@@ -19,7 +19,7 @@ const Footer = () => {
               <div className="container mx-auto">
                   <div className="text-center">
                       <div className="social_icons flex mb-6 justify-center">
-                          <a href="#" className="flex justify-center items-center w-10 h-10">
+                          <a href="https://github.com/AjithPG " target="_blank" className="flex justify-center items-center w-10 h-10">
                           <i className="ri-github-fill ri-xl"></i>
                           </a>
                           <a href="#" className="flex justify-center items-center w-10 h-10">
@@ -30,7 +30,7 @@ const Footer = () => {
                           </a>
                       </div>
                       <p>Made with ❤️ by <a href="https://github.com/AjithPG/" className="text-secondary">Ajith PG</a> </p>
-                      <p>Site build with <a href="https://nextjs.org/" className="text-secondary">Nextjs</a> and <a href="https://www.sanity.io/" className="text-secondary">Sanity</a> </p>
+                      <p>Site built with <a href="https://nextjs.org/" className="text-secondary">Nextjs</a> and <a href="https://www.sanity.io/" className="text-secondary">Sanity</a> </p>
                   </div>
               </div>
           </footer>

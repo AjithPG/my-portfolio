@@ -72,7 +72,7 @@ const Skills = () => {
     client.fetch(work).then((data)=>{
 
       setExpe(data);
-
+    
     })
 
   },[])
@@ -84,7 +84,7 @@ const Skills = () => {
       </h2>
       <div className="app__skills-container flex flex-col lg:flex-row w-4/5 m- mx-auto">
         <div className="app__skills-list flex flex-wrap justify-center lg:justify-start items-start mr-6 flex-1 mb-8 lg:mb-0">
-          {skill.map((skills,index) => (
+          {skill?.map((skills,index) => (
             <motion.div whileInView={{opacity:[0,1]}} transition={{duration:0.8}} className="app_skills-item flex text-center flex-col mr-4 ml-4 mb-4" key={index}>
               <div className="app_skills-img flex w-20 h-20 rounded-full justify-center items-center hover:shadow-md bg-white">
                 <img
@@ -113,7 +113,7 @@ const Skills = () => {
                 <p className="text-base text-secondary font-medium">{exp.year}</p>
               </div>
               <div className="app_skills-exp-works flex-1">
-                {exp.works.map((item, index) => (
+                {exp?.works?.map((item, index) => (
                  
                     <div className="app_skills-exp-work" key={index}>
                       <h4 className="text-md font-bold">{item.name}</h4>
